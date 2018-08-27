@@ -1,0 +1,30 @@
+{
+  "name": "ms-listd",
+  "version": "1.0.0",
+  "description": "MEAN stack app for users to list movies and tv shows.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "*",
+    "mongoose": "*",
+    "bcryptjs": "*",
+    "cors": "*",
+    "jsonwebtoken": "*",
+    "body-parser": "*",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lauti337r/ms-listd.git"
+  },
+  "author": "Lautaro Romeo (lauti337r)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lauti337r/ms-listd/issues"
+  },
+  "homepage": "https://github.com/lauti337r/ms-listd#readme"
+}
