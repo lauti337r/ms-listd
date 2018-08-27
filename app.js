@@ -19,10 +19,15 @@ const port = 3000;
 
 
 
-//  Middleware
+///  Middleware
+//Cors
 app.use(cors());
+//Body Parser
 app.use(bodyParser.json());
-
+//Passport
+app.use(passport.initialize());
+app.use(passport.session());
+require('./config/passport')(passport);
 
 //Routes
 const users = require('./routes/users');
@@ -31,11 +36,8 @@ app.get('/', (req,res) => {
     res.send("Invalid endpoint");
 });
 
-
-
 //Set static folder (public)
 app.use(express.static(path.join(__dirname,'public')));
-
 
 
 app.listen(port, () => {
